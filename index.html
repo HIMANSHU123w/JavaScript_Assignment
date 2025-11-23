@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Registration System</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Student Registration System</h1>
+        <p>Register, view, edit and delete student records.</p>
+    </header>
+
+    <section class="form-section">
+        <h2>Register Student</h2>
+
+        <form id="studentForm">
+            <div class="input-group">
+                <label>Student Name</label>
+                <input type="text" id="name" required>
+            </div>
+
+            <div class="input-group">
+                <label>Student ID</label>
+                <input type="text" id="studentId" required>
+            </div>
+
+            <div class="input-group">
+                <label>Email ID</label>
+                <input type="email" id="email" required>
+            </div>
+
+            <div class="input-group">
+                <label>Contact Number</label>
+                <input type="text" id="contact" required>
+            </div>
+
+            <button type="submit" class="btn">Add Student</button>
+        </form>
+    </section>
+
+    <section class="display-section">
+        <h2>Registered Students</h2>
+
+        <div id="scrollContainer">
+            <table id="studentTable">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Student ID</th>
+                        <th>Email</th>
+                        <th>Contact</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody"></tbody>
+            </table>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
